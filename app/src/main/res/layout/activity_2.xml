@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2"
+    android:padding="14dp"
+    android:orientation="vertical"
+    android:background="@drawable/tlo">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/speakoala" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Wprowadź tekst po angielsku"
+        android:textColor="#FFFFFF"
+        android:maxLength="250"
+        android:textColorHint="#ADFFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Ton"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/ton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#00FFFFFF"
+        android:progress="50"
+        android:scrollbarTrackVertical="@color/colorAccent"
+        app:tickMarkTint="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Prędkość"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/predkosc"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center_horizontal"
+        android:progress="50" />
+
+    <Button
+        android:id="@+id/button_speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/przycisk"
+        android:enabled="false"
+        android:padding="10dp"
+        android:text="Sprawdź wymowę"
+        android:textColor="#427F42"
+        android:textSize="13sp" />
+
+</LinearLayout>
